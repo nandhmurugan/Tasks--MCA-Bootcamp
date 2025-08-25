@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Meesho Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    *{
+        font-family: Arial, sans-serif;
+    }
+body>header{
+    background-color: white;
+     position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+/* HEAD STYLINGS */
+
+body{
+    height: 500vh;
+    margin-left: 0px;
+}
+
+
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+       
+}
+    
+    input{
+        width: 300px;
+        border: none;
+    }
+    strong{
+        font-family: cursive;
+        color: rgba(45, 0, 42, 0.815);
+        font-size:xx-large;
+        
+    }
+
+.search{
+    border: 1px solid black;
+    width: 300px;
+    display:flex;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+
+}
+.profile{
+    width: 50px;
+     
+   
+}
+.profile>a{
+    width:100px;
+    margin-top: -0.5%;
+    margin-left: -2%;
+    border: none;
+    display: flex; 
+}
+
+.cart>input{
+    width: 100px;
+}
+
+
+div>ul{
+    display: flex;
+    list-style-type: none;
+     justify-content: space-evenly;
+     margin-left: 0%;
+     margin-right: 0%;
+     cursor: pointer;
+    
+}
+
+/* HEAD STYLINGS ENDS */
+
+/* MAIN BODY STYLES */
+div>img{
+    margin-top: 105px;
+    height: 450px;
+}
+
+.box-return{
+ border: 1px solid violet;
+ display: flex;
+margin-right: -7.5%;
+height: 30px;
+align-items: center;
+
+}
+
+.cards :hover{
+     transform: scale(1.15); /* to Pop up images */
+}
+.cards{
+    justify-content: center;
+    text-align: center;
+    margin-top:-2%;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+.cards>img{
+    height: 150px;
+    width: 150px;
+}
+
+.gold{
+    height: 600px;
+    width: 100%;
+    position: relative;
+    margin-top: 5%;
+    
+}
+    
+.gold img{
+    width: 1700px;
+    height: 500px;
+    justify-items: center;
+    margin: 0px;
+    right: 0%; 
+}
+ .gold-cards :hover{
+     transform: scale(1.15); /* to Pop up images */
+}
+
+a{
+  text-decoration: none;
+    border: 1px solid black;
+       position:absolute;
+}
+
+.image-container{
+    position: relative;
+    border: 2px solid black;
+    display: inline-block;
+  }
+
+
+.txt{
+
+    position: absolute;
+    top: 50%;
+    right: 300px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    color: white;
+}
+
+.txt p{
+  
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.image-container button {
+    position: absolute;
+    transform: translate(30%,50%);/* button alignment */
+    left: 0%;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+ .gold .gold-images{
+    display: grid;
+  grid-template-columns: repeat(2, 200px); /* 2 columns */
+  grid-template-rows: repeat(2, 200px);    /* 2 rows */
+  gap: 10%;
+    position: absolute;
+     transform: translate(5%,10%);
+     top: 0%;
+     right:6%
+ }
+ .gold{
+    position: relative;
+    cursor: pointer;
+    
+  }
+  .gold button{
+    position: absolute;
+    transform: translate(100%,950%);/* button alignment */
+    left: 10%;
+    top: 0;
+    padding: 10px 20px;
+    border: 2px solid gold;
+    color: gold;
+    background-color: rgba(210, 105, 30, 0.575);
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+ .gold-images img{
+    width: 200px;
+    height: 200px;
+    flex-wrap: wrap;
+ }
+ .gold-cards img{ 
+    display: flex;
+ }
+
+ /* Main body styling ends here */
+ 
+/* Footer section */
+.footer{
+ margin-top: 5%;
+ border: 2px solid rgb(209, 208, 208);
+ width: 90%;
+ margin-left: 5%;
+ /* margin-right: 100%; */
+ 
+}
+  .footer p{
+     padding-left: 5%;
+     padding-right: 5%;
+    
+   
+  }
+.footer nav{
+    
+    border: 2px solid rgb(209, 208, 208);
+    padding-left: 4%;
+   
+}
+
+.last{
+    padding-left: 5%;
+    padding-right: 5%;
+      justify-items: left;
+}
+
+.purple{
+       padding-left: 3%;
+    padding-right: 5%;
+    color: rgb(156, 23, 156);
+    justify-items: left;
+}
+.black{
+margin-left: 0%;
+justify-items: left;
+}
+.black h4{
+    color: black;
+    margin-left: 0%;
+      justify-items: left;
+   
+} 
+</style>
+
+</head>
+
+
+
+
+<body>
+
+    <!--HEAD -->
+    <header>
+    <div class="container">
+    <div >
+    <form >
+        <label for="meesho">
+            <strong>meesho</strong> 
+            
+        </label>
+
+        <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Try Saree,Kurti, or Search by Product code"></input>
+        </div>
+
+
+      <button>Become a Supplier</button>  
+        <button>Investor Relations</button>
+
+        <!-- <div class="profile">
+            <i class="fa-solid fa-circle-user"></i>
+            <input type="text" placeholder="Profile"></input>
+        </div> -->
+
+        <div class="profile">
+    <a href="meesho-login.html" style="text-decoration:none; color:inherit;">
+        <i class="fa-solid fa-circle-user"></i>
+        <input type="text" placeholder="Profile" readonly>
+    </a>
+</div>
+
+
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <input type="text" placeholder="Cart"></input>
+        </div>
+        </form>
+    </div>
+    <hr>
+    <!-- HEAD -->
+
+    <div >
+        <ul>
+            <li>Women Ethnic</li>
+            <li>Women Western</li>
+            <li>Men</li>
+            <li>Kids</li>
+            <li>Home & Kitchen</li>
+            <li>Beauty & Health</li>
+            <li>Jewellery & Accessories</li>
+            <li>Bags & Footwear</li>
+            <li>Electronics</li>
+            <li>Sports & Fitness</li>
+            <li>Car & Motorbike</li>
+            <li>Office Supplies & Stationery</li>
+
+        </ul>
+    </div>
+  <hr>  
+  </div>
+  </header>
+
+  <!-- MAIN -->
+   <div class="image-container">
+        <img src="https://images.meesho.com/images/marketing/1746425994914.webp" alt="loading">
+        <!-- Text inside the image -->
+        <div class="txt">
+            <p>Smart Shopping</p>
+            <p>Trusted by Millions</p>
+            <button>Shop Now</button>
+        </div>
+       
+    </div>
+
+
+<div class="box return">
+       <ul class="box-return">
+        <li><i class="fa-solid fa-box"></i> 7 Days Easy Return</li>
+        <li><i class="fa-solid fa-wallet"></i>Cash on Delievery</li>
+        <li><i class="fa-solid fa-hand-holding-dollar"></i>Lowest Price</li>
+       </ul>
+</div>
+
+<div class="cards-container">
+    <div class="cards">
+        <img src="https://images.meesho.com/images/marketing/1744634654837.webp" alt="">
+        <p>Ethnic Wear</p>
+    </div>
+    <div class="cards">
+        <img src="https://images.meesho.com/images/marketing/1744634725496.webp" alt="">
+        <p>Western Dresses</p>
+    </div>
+    <div class="cards">
+        <img src="https://images.meesho.com/images/marketing/1744634780426.webp" alt="">
+        <p>Mens Wear</p>
+    </div>
+    <div class="cards">
+        <img src="https://images.meesho.com/images/marketing/1744634814643.webp" alt="">
+        <p>Footwear</p>
+    </div>
+    <div class="cards">
+        <img src="https://images.meesho.com/images/marketing/1744634835018.webp" alt="">
+        <p>Home Decor</p>
+    </div>
+    <div class="cards">
+        <img src="https://images.meesho.com/images/marketing/1744634871107.webp" alt="">
+        <p>Beauty</p>
+    </div>
+    <div class="cards">
+        <img src="https://images.meesho.com/images/marketing/1744634909968.webp" alt="">
+        <p>Accessories</p>
+    </div>
+    <div class="cards">
+        <img src="https://images.meesho.com/images/marketing/1744634937295.webp" alt="">
+        <p>Groceries</p>
+    </div>
+
+
+</div>
+
+<div class="gold">
+    <img src="https://images.meesho.com/images/marketing/1744698265981.webp"  alt=""></img>
+    <button>Shop Now</button>
+
+<div class="gold-images">
+     <!-- cards inside image -->
+     <div class="gold-cards">
+     <img src="https://images.meesho.com/images/marketing/1744722796811.webp" alt="">
+
+    </div>
+
+    <div class="gold-cards">
+     <img src="https://images.meesho.com/images/marketing/1744635113661.webp" alt="">
+    </div>
+
+     <div class="gold-cards">
+     <img src="https://images.meesho.com/images/marketing/1744635139351.webp" alt="">
+    </div>
+
+    <div class="gold-cards">
+     <img src="https://images.meesho.com/images/marketing/1744635189897.webp" alt="">
+    </div>
+</div>
+
+
+<!-- Footer Section -->
+<div class="footer">
+    <nav><h3>More about Meesho</h3> </nav>
+<div class="last">
+    <p><h2>Discover a World of Affordable Fashion & Everyday Essentials</h2>
+    Upgrade your wardrobe and stock your home with the latest trends and essentials at prices designed for everyday value. Meesho offers a vast selection of products across all categories, ensuring you find everything you need at prices suited for everyday budgets.</p>
+  </div>
+
+<div class="last">
+    <p><h3>Shop Millions of Products Across All Categories</h3>
+   From trendy fashion finds to essential homeware, Meesho is your one-stop shop for everything you need. Explore millions of products across a wide variety of categories, ensuring you find the perfect item for any occasion.</p>
+  </div>
+
+<div class="last">
+    <p><h2>Latest Women's Fashion Is Right Here</h2>
+        <h3>Western Wear for Women</h3>
+   Are you looking to revamp your wardrobe with stylish and affordable pieces? Look no further than Meesho's extensive collection of women's western wear. Find trendy dresses, casual jeans, and comfortable tops suitable for any occasion. Our collection reflects current trends, with fresh styles added regularly , ensuring you stay on top of your fashion game. Browse our collection of funky jewelry and accessories to complete your look and express your unique style.</p>
+  </div>
+
+
+<div class="last">
+    <p><h3>Accessories, Jewellery, and Footwear</h3>
+  Elevate your outfit and add a touch of personality with Meesho's diverse range of accessories. Choose from a wide selection of jewelry sets, handbags, belts, and footwear to complement your style. Whether you're searching for statement earrings or comfortable sneakers, you’ll find a wide selection to suit your style.</p>
+  </div>
+
+  <div class="last">
+  <h2>Join the Meesho Community</h2>
+  For a seamless online shopping experience, feel free to download the Meesho App. With millions of happy customers, we believe in growing our community. To give you a hassle-free online shopping experience, plenty of user-friendly features will make your shopping online easier than ever. Meesho offers multiple payment options, debit and credit cards, UPI, and COD, to help you with a smooth checkout process. Suppose you are unhappy or receive a damaged product. In that case, you can raise your concern with our expert team to immediately return them or get a full refund without questions. For any queries or concerns, send us an email at query@meesho.com. You can also contact us on social media through Facebook, Instagram, or Twitter. We're here to help you.
+</div>
+
+<div class="purple">
+    <h2>Download Meesho App Now</h2>
+</div>
+
+<div class="last">
+  <h2>More Than Just Shopping</h2>
+ <h4>Interested in selling online? Meesho enables individuals to start their selling journey with ease. </h4>
+</div>
+
+<div class="purple">
+    <h3>Online Shopping</h3>
+</div>
+
+ 
+ <div class="purple">
+    <div class="black"><h4>Baby</h4>
+    Baby Blanket | Baby Hanging Cradle | Baby Pillows | Baby Sleeping Bag | Baby Towels
+     </div>
+
+    <div class="purple">
+    <div class="black"><h4>Electronics & Accessories</h4>
+    Android Smart Watches | Bluetooth Earphones | Bluetooth Speakers | Car Mobile Holders | Car Mobile Holders | CCTV Cameras | Data Cables | Digital Photo Frames | Dongle | Earphones | Fast Charging Power Banks | Headphones | Keyboard | Laptop Accessories | Laptop Bags | Memory Cards | Microphone | Mobile Chargers | Mouse | On Ear Headphones | Pen Drives | Speakers | Spy Cameras | Sport Headphones | VR Box | Diwali Lightings
+     </div>
+
+ <div class="purple">
+    <div class="black"><h4>Home & Kitchen</h4>
+    Aprons | Choppers | Chopping Boards | Cookers | Cutlery | Food Processors | Food Strainers | Funnels | Graters | Hand Blender | Ice Cube Trays | Ice Cream Scoops | Jars & Container | Juicer | Kitchen Gloves | Kitchen Mat | Kitchen Scissors | Kitchen Towel | Knives | Lunch Boxes | Mashers | Measuring Cups | Mixer Grinder | Napkins Holder | Racks & Holders | Roti Maker | Salt & Pepper Shakers | Sandwich Maker | Spice Racks | Table Cover | Thermos & Flasks | Toaster | Tongs | Trivets | Water Bottles
+     </div>
+
+ </div>
+</div>
+
+</div>
+
+</body>
+</html>

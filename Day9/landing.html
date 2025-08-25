@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Website</title>
+    <style>
+
+        /* Universal tag */
+        *{
+            margin:0%;
+        }
+
+        
+        .arrow img{
+           
+            height:50px;
+           
+            
+        }
+
+        #arrow1{
+            position: absolute;
+            top: 50%;
+            transform: rotateY(180deg);
+              
+        }
+
+        #arrow2{
+            position: absolute;
+            right: 0px;
+            top:50%;
+        }
+
+        .mini{
+            display: flex;
+            position: absolute;
+            bottom: 20%;
+            right: 10%;
+
+        }
+        .mini img{
+            height: 70px;
+            width:100px;
+        }
+        /* Background aImage container */
+        #img-container {
+
+            position: relative; 
+            background-image: url(./Assests/941788.jpg);
+            height: 100vh;
+            width: 100%;
+            background-size: 200% 100%; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="img-container">
+
+        <div class="arrow">
+            <img onclick="revimg()" id ="arrow1" src ="./Assests/arrow.png" alt="left">
+            <img onclick="changeimg()" id ="arrow2" src ="./Assests/arrow.png" alt="right">
+        </div>
+
+        <div class="mini">
+            <img onclick="change(0)" src="./Assests/941788.jpg" alt="Loading">
+            <img onclick="change(1)" src="./Assests/188673.jpg" alt="Loading">
+            <img onclick="change(2)"  src="./Assests/922693.jpg" alt="Loading">
+            <img onclick="change(3)"  src="./Assests/941790.jpg" alt="Loading">
+            <img onclick="change(4)" src="./Assests/941799.jpg" alt="Loading">
+            <img onclick="change(5)" src="./Assests/148423.jpg" alt="Loading">
+        </div>
+
+
+
+    </div>
+<script src="./landing.js"></script>
+
+</body>
+</html>
